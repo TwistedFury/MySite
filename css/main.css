@@ -1,7 +1,16 @@
+/* ===== MAIN COLORS ===== */
+:root {
+  --bg-1: #000066; /* Dark Blue (Background Base 01) */
+  --bg-2: #000099; /* Medium Blue (Background Base 02) */
+  --highlight-1: #ffd700; /* Gold (Highlight Color 01) */
+  --accent-1: #6aa5ff; /* Light Blue (Accent Color 01) */
+  --text-1: #f5f7ff; /* Off-White (Primary Text Color) */
+}
+
 /* ===== GLOBAL ===== */
 body {
-  background: linear-gradient(180deg, #000066 0%, #000099 100%);
-  color: #f5f7ff;
+  background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+  color: var(--text-1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7;
   margin: 0;
@@ -10,9 +19,9 @@ body {
 
 /* ===== HEADER / NAV ===== */
 header {
-  background-color: #000033;
+  background-color: var(--bg-1);
   padding: 10px 0;
-  border-bottom: 2px solid #1a1a80;
+  border-bottom: 2px solid var(--bg-2);
   text-align: center;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
@@ -30,7 +39,7 @@ nav li {
 }
 
 nav a {
-  color: #ffd700;
+  color: var(--highlight-1);
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1em;
@@ -41,19 +50,19 @@ nav a {
 
 nav a:hover {
   background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: var(--text-1);
 }
 
 nav a.active {
-  background: #ffd700;
-  color: #000033;
+  background: var(--highlight-1);
+  color: var(--bg-1);
 }
 
 /* ===== HORIZONTAL LINES ===== */
 hr {
   border: none;
   height: 2px;
-  background: linear-gradient(90deg, #ffd700, #6aa5ff);
+  background: linear-gradient(90deg, var(--highlight-1), var(--accent-1));
   width: 90%;
   margin: 30px auto;
   border-radius: 10px;
@@ -103,36 +112,36 @@ hr {
 /* Text block styling */
 .about-text {
   max-width: 600px;
-  color: #ffffff;
+  color: var(--text-1);
   font-size: 18px;
   line-height: 1.7;
 }
 
 .about-text h2 {
   font-size: 2em;
-  color: #ffd700;
+  color: var(--highlight-1);
   margin-bottom: 10px;
 }
 
 .about-text h3 {
   font-size: 1.2em;
-  color: #add8e6;
+  color: var(--accent-1);
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 .about-text p {
   margin-bottom: 15px;
-  color: #e8e8ff;
+  color: var(--text-1);
 }
 
 /* Typography tweaks for emphasis */
 strong {
-  color: #add8e6;
+  color: var(--accent-1);
 }
 
 em {
-  color: #dbe6ff;
+  color: var(--text-1);
 }
 
 /* ===== Responsive design ===== */
@@ -241,7 +250,7 @@ em {
   text-align: left;
   padding: 12px 16px;
   background: rgba(255,255,255,0.10);
-  color: #ffd700;
+  color: var(--highlight-1);
 }
 
 .interests td {
@@ -256,29 +265,29 @@ em {
 
 /* ===== LINKS ===== */
 a {
-  color: #ffd700;
+  color: var(--highlight-1);
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #ffffff;
+  color: var(--text-1);
 }
 
 /* ===== TYPOGRAPHY ===== */
 h1,
 h2 {
   text-align: center;
-  color: #ffd700;
+  color: var(--highlight-1);
   margin-bottom: 10px;
 }
 
 em {
-  color: #cfd9ff;
+  color: var(--text-1);
 }
 
 strong {
-  color: #add8e6;
+  color: var(--accent-1);
 }
 
 /* ===== TABLE ===== */
@@ -302,12 +311,12 @@ th, td {
 
 th {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #ffd700;
+  color: var(--highlight-1);
   font-weight: bold;
 }
 
 td {
-  color: #e8e8ff;
+  color: var(--text-1);
 }
 
 /* ===== FOOTER ===== */
@@ -316,9 +325,9 @@ footer {
   padding: 20px 0;
   margin-top: 40px;
   font-size: 14px;
-  background-color: #000033;
-  color: #b0b8ff;
-  border-top: 2px solid #1a1a80;
+  background-color: var(--bg-1);
+  color: var(--text-1);
+  border-top: 2px solid var(--bg-2);
 }
 
 /* ===== RESPONSIVE ===== */
