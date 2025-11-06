@@ -100,30 +100,28 @@ nav a.active {
 /* ---------- Slideshow ---------- */
 .slideshow-container {
   position: relative;
-  display: flex;
-  justify-content: center; /* centers the image */
-  align-items: center;
-  margin: 3% auto;
   width: 100%;
-  max-width: 1000px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-  padding: 2%;
-  overflow: hidden; /* hides fade edges cleanly */
+  max-width: 1000px;  /* or whatever width you prefer */
+  aspect-ratio: 16 / 9; /* 👈 Forces a layout */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.15); /* subtle placeholder background */
 }
 
 .slideshow-image {
   width: 100%;
-  max-height: 75vh; /* ensures it doesn’t exceed 75% of the viewport height */
-  height: auto;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000; /* adds letterbox effect instead of cropping */
   border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-  object-fit: cover;
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
 }
-
 
 .slideshow-image.show {
   opacity: 1;
@@ -320,4 +318,32 @@ em {
 .skills-container h2 {
   margin-bottom: 15px;
   font-size: xx-large;
+}
+
+/* ===== PROJECTS SECTION ===== */
+#projects {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.projects-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.projects-container:hover {
+  background: #ffd9000e;
+}
+
+.projects-container ul {
+  margin-left: 20px;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.projects-container ul li {
+  margin-bottom: 15px;
 }
