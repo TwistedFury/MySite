@@ -2,10 +2,8 @@ let index = 0;
 let slideInterval = setInterval(autoSlide, 5000); // In milliseconds ; Currently set to 5 seconds
 
 const images = [
-    "../images/site_icon.ico",
-    "../images/site_icon.ico",
-    "../images/site_icon.ico",
-    "../images/site_icon.ico"
+  "https://github.com/TwistedFury/MySite/blob/b3a16b429ba0ad6ee342ee2084530f8a59a30569/images/site_icon.ico",
+  "https://github.com/TwistedFury/MySite/blob/b3a16b429ba0ad6ee342ee2084530f8a59a30569/images/site_icon.ico"
 ];
 
 // ---- ADD: lightweight preloader (no path changes) ----
