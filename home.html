@@ -19,15 +19,26 @@
         </ul>
     </nav>
 </header>
-    <!-- Random Quote Generator -->
+    <!-- Random Quote Generator (local API)-->
     <section class="quote-box">
-        Inspirational quotes provided by <a href="https://zenquotes.io/" target="_blank">ZenQuotes API</a>
         <p class="quote-text"></p>
     </section>
 
     <!-- Image Slideshow (setInterval) -->
+    <section class="slideshow-container">
+        <img class="slideshow-image" decoding="async" fetchpriority="high" alt="Slideshow Image">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </section>
 
     <!-- Link JS -->
-    <script src="js/random-quote.js"></script>
+    <script type="module" src="js/random-quote.js"></script>
+    <script type="module" src="js/image-slideshow.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <hr />
+        <p>&copy; 2025 Cody Owens. All rights reserved.</p>
+    </footer>
 </body>
 </html>
