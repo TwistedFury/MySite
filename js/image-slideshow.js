@@ -96,7 +96,6 @@ function autoSlide() {
 
 function buttonNext() {
   nextImage();
-  index++; // Adjust index since nextImage increments it
   clearInterval(slideInterval);
   slideInterval = setInterval(autoSlide, 5000);
   console.log("Next button clicked");
@@ -104,7 +103,6 @@ function buttonNext() {
 
 function buttonPrev() {
   prevImage();
-  index--; // Adjust index since prevImage increments it
   clearInterval(slideInterval);
   slideInterval = setInterval(autoSlide, 5000);
   console.log("Previous button clicked");
