@@ -1,39 +1,57 @@
-Personal Portfolio Website
+<div align="center">
 
-A personal portfolio website showcasing my projects, technical skills, and development experience.
-The site is built using HTML, CSS, and JavaScript and is hosted using GitHub Pages.
+# 🌐 Personal Portfolio Website
 
-🔗 Live Site:
-https://twistedfury.github.io/MySite/home.html
+### A custom-built portfolio showcasing my projects, skills, and growth as a developer
 
-Overview
+[![Live Site](https://img.shields.io/badge/Live%20Site-Visit%20Portfolio-4ea1ff?style=for-the-badge)](https://twistedfury.github.io/MySite/home.html)
+[![GitHub Pages](https://img.shields.io/badge/Hosted%20With-GitHub%20Pages-222222?style=for-the-badge&logo=github)](https://pages.github.com/)
+[![HTML](https://img.shields.io/badge/HTML5-Markup-e34f26?style=for-the-badge&logo=html5&logoColor=white)](#)
+[![CSS](https://img.shields.io/badge/CSS3-Styling-1572b6?style=for-the-badge&logo=css3&logoColor=white)](#)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Functionality-f7df1e?style=for-the-badge&logo=javascript&logoColor=black)](#)
 
-This website was originally created as a class project but has since evolved into my personal development portfolio. It highlights projects I have worked on, provides insight into my programming experience, and serves as a central location for my work.
+</div>
 
-The site also includes a small JavaScript quote generator that displays a random programming-related quote each time the page loads.
+---
 
-Features
+## ✨ Overview
 
-Personal portfolio homepage
+This project is my **personal portfolio website**, originally started for a class and later expanded into a space where I can present my work, technical experience, and ongoing development as a programmer.
 
-Project showcase
+It serves as a central place to showcase projects while also demonstrating my foundation in **front-end web development** using vanilla HTML, CSS, and JavaScript.
 
-Responsive page layout
+---
 
-Custom CSS styling
+## 🔗 Live Demo
 
-Random quote generator (JavaScript)
+**Portfolio Website:**  
+[twistedfury.github.io/MySite/home.html](https://twistedfury.github.io/MySite/home.html)
 
-Static hosting via GitHub Pages
+---
 
-Quote Generator
+## 🧩 Features
 
-The site includes a simple random quote generator implemented in JavaScript.
+- **Personal portfolio homepage**
+- **Project showcase section**
+- **Custom styling with CSS**
+- **Responsive layout structure**
+- **Random quote generator built in JavaScript**
+- **Hosted publicly with GitHub Pages**
 
-Quotes are stored in a hardcoded array, and each page load randomly selects one to display.
+---
 
-Example concept:
+## 💬 Quote Generator
 
+One of the interactive elements on the site is a **random quote generator**.
+
+Quotes are stored in a **hardcoded JavaScript array**, and one is selected at random when the page loads. This was a simple but useful feature for practicing:
+
+- Arrays
+- Random selection logic
+- DOM manipulation
+- Basic JavaScript interactivity
+
+### Example
 const quotes = [
     "Programs must be written for people to read...",
     "Talk is cheap. Show me the code.",
@@ -42,64 +60,71 @@ const quotes = [
 
 const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-This feature was added to practice basic JavaScript logic, DOM manipulation, and randomization.
+## 🛠️ Tech Stack <br>
+### Technology	Purpose
+HTML5	Structure and content 
+CSS3	Styling and layout 
+JavaScript	Interactivity and quote generation 
+GitHub Pages	Deployment and hosting 
 
-Tech Stack
+## 📁 Project Structure
+MySite <br>
+│ <br>
+├── css/ <br>
+├── js/ <br>
+├── images/ <br>
+├── home.html <br>
+└── other pages...
 
-Frontend:
-
-HTML5
-
-CSS3
-
-JavaScript
-
-Hosting:
-
-GitHub Pages
-
-Running the Project Locally
+## 🚀 Running Locally
 
 Clone the repository:
 
 git clone https://github.com/TwistedFury/MySite.git
 
-Open the project folder and launch:
+Then open home.html in your browser.
 
-home.html
+Since this is a static website, there are no extra dependencies, frameworks, or build steps required.
 
-in any modern web browser.
+## 🎯 Goals of This Project
 
-Because the site is fully static, no build tools or dependencies are required.
+This site helps me:
 
-Repository Structure
-MySite
-│
-├── css/
-├── js/
-├── images/
-├── home.html
-└── other pages...
-Future Improvements
+Present my work in one place
 
-Possible improvements for the portfolio:
+Practice front-end development fundamentals
 
-Improved responsive layout
+Improve visual styling and page organization
 
-Project filtering or categorization
+Maintain a portfolio I can continue expanding over time
 
-Contact form
+## 🔮 Future Improvements
 
-Dynamic project loading
+Planned or possible improvements include:
 
-Animation polish
+Better responsive behavior across screen sizes
 
-Expanded project pages
+Improved UI polish and layout consistency
 
-Author
+Project filtering or categorized sections
 
-Cody
-Computer Science Student
+Contact section or form
 
-GitHub:
-https://github.com/TwistedFury
+Expanded project pages with more detail
+
+Additional animations and visual refinement
+
+## 👨‍💻 Author
+
+### Cody Owens, Software & Game Development Student
+
+### GitHub: TwistedFury
+
+<div align="center">
+Thanks for checking out my portfolio repo.
+
+If you'd like to see the live version, click below:
+
+<a href="https://twistedfury.github.io/MySite/home.html">View Portfolio</a>
+
+</div>
